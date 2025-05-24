@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>No Fluff Engineering</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: none;
+    }
+
+    .grid-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      background-color: #1e2227;
+      background-image: 
+        linear-gradient(transparent 0%, transparent 95%, rgba(255,255,255,0.05) 95%, rgba(255,255,255,0.05) 100%),
+        linear-gradient(90deg, transparent 0%, transparent 95%, rgba(255,255,255,0.05) 95%, rgba(255,255,255,0.05) 100%);
+      background-size: 64px 64px;
+    }
+
+    .browser {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      width: 900px;
+      padding: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .address-bar {
+      background: #f3f3f3;
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .mac-buttons {
+      display: flex;
+      gap: 6px;
+      margin-right: 12px;
+    }
+
+    .mac-buttons span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .red { background: #ff5f57; }
+    .yellow { background: #ffbd2e; }
+    .green { background: #28c840; }
+
+    .url {
+      color: #555;
+      font-size: 0.95rem;
+      font-family: monospace;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .highlight {
+      display: inline-block;
+      border-bottom-width: 5px;
+      border-bottom-style: solid;
+      padding-bottom: 4px;
+    }
+
+    .blue { border-color: #0077cc; }
+    .orange { border-color: #ff9500; }
+    .red-underline { border-color: #ff3b30; }
+
+    .subtext {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-background"></div>
+  <div class="browser">
+    <div class="address-bar">
+      <div class="mac-buttons">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+      <span class="url">https://aadi.manchekar.com/</span>
+    </div>
+
+    <h1><span class="highlight blue">Documentation that matters.</span></h1>
+    <h1><span class="highlight orange">Code that works.</span></h1>
+    <h1><span class="highlight red-underline">No fluff.</span></h1>
+
+    <div class="subtext">
+      <p>Creating concise, readable documentation that developers actually use.</p>
+      <p>Writing robust, maintainable, clean code that solves real problems.</p>
+      <p>Delivering solutions with clarity and purpose at every step.</p>
+    </div>
+  </div>
+</body>
+</html>
